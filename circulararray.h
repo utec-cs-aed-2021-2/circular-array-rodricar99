@@ -165,17 +165,16 @@ T& CircularArray<T>::operator[](int)
 
 template<class T>
 void CircularArray<T>::sort() {
-    for (int i = 0; i < size() - 1; i++) {
-        auto minIndice = i;
-
-
-        for (int j = i + 1; j < size()-i-1; j++) {
-            if (array[j] < array[minIndice]) {
-                minIndice = j;
-            }
+    //el merge sort necesita modificacion del main, entonces utilizo el insertion
+    if (is_sorted()) return;
+    int j;
+    T temp;
+    for(int i=1; i<size();i++){
+        temp=array[i];
+        for(j=i; j >0 && array[j-1] >temp;j--) {
+            array[j] = array[j - 1];
         }
-
-
+        array[j]=temp;
     }
 }
 
