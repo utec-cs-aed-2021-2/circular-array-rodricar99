@@ -4,20 +4,20 @@ using namespace std;
 template <class T>
 class CircularArray
 {
-private:
+protected:
     T *array;
     int capacity;
     int back, front;
 
 public:
-    CircularArray();
+     CircularArray();
     CircularArray(int _capacity);
     virtual ~CircularArray();
-    void push_front(T data);
-    void push_back(T data);
+    virtual  void push_front(T data);
+    virtual void push_back(T data);
     void insert(T data, int pos);
-    T pop_front();
-    T pop_back();
+    virtual  T pop_front();
+    virtual  T pop_back();
     bool is_full();
     bool is_empty();
     int size();
