@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/rodri/OneDrive/Escritorio/circular-array-rodricar99-main/main.cpp" "C:/Users/rodri/OneDrive/Escritorio/circular-array-rodricar99-main/cmake-build-debug/CMakeFiles/circular_array_rodricar99.dir/main.cpp.obj"
+  "C:/Users/rodri/OneDrive/Documentos/GitHub/circular-array-rodricar99/main.cpp" "C:/Users/rodri/OneDrive/Documentos/GitHub/circular-array-rodricar99/cmake-build-debug/CMakeFiles/circular_array_rodricar99.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
