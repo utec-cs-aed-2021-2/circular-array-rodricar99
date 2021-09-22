@@ -27,7 +27,7 @@ set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCC 1)
 set(CMAKE_C_COMPILER_LOADED 1)
 set(CMAKE_C_COMPILER_WORKS TRUE)
-set(CMAKE_C_ABI_COMPILED FALSE)
+set(CMAKE_C_ABI_COMPILED TRUE)
 set(CMAKE_COMPILER_IS_MINGW 1)
 set(CMAKE_COMPILER_IS_CYGWIN )
 if(CMAKE_COMPILER_IS_CYGWIN)
@@ -46,9 +46,9 @@ set(CMAKE_C_IGNORE_EXTENSIONS h;H;o;O;obj;OBJ;def;DEF;rc;RC)
 set(CMAKE_C_LINKER_PREFERENCE 10)
 
 # Save compiler ABI information.
-set(CMAKE_C_SIZEOF_DATA_PTR "")
+set(CMAKE_C_SIZEOF_DATA_PTR "8")
 set(CMAKE_C_COMPILER_ABI "")
-set(CMAKE_C_BYTE_ORDER "")
+set(CMAKE_C_BYTE_ORDER "LITTLE_ENDIAN")
 set(CMAKE_C_LIBRARY_ARCHITECTURE "")
 
 if(CMAKE_C_SIZEOF_DATA_PTR)
@@ -72,7 +72,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "")
-set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include;C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed;C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include")
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "mingw32;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc;moldname;mingwex")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0;C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc;C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/lib;C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
