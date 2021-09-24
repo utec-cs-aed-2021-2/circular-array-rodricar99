@@ -5,6 +5,7 @@
 using namespace std;
 
 int main() {
+    int a;
     CircularArray<int>* array = new CircularArray<int>(7);
     ASSERT(array->is_empty() == true, "The function is_empty is not working");
     array->push_back(6);
